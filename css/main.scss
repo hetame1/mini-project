@@ -80,7 +80,7 @@ img {
 .main {
   width: 100%;
   padding: 25px;
-  background-color: #fff;
+  background-color: #fff; 
 }
 .toolbox-wrapper {
   height: 30px;
@@ -148,6 +148,33 @@ img {
   .infobox-difficulty {
     width: 20%;
     float: left;
+  }
+}
+.index_wrapper {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px 0 15px 0;
+  height: auto;
+  .index {
+    width: 195px;
+    height: 50px;
+    line-height: 50px;
+    background: #c2c2c2;
+    text-align: center;
+    float: left;
+    margin: 0 15px 0 0;
+    a {
+      display: block;
+      width: 145px;
+      height: 50px;
+      color: #fff;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    .checkbox {
+      background-color: #fff;
+    }
   }
 }
 // /공통 부분
@@ -290,7 +317,7 @@ img {
 }
 
 // 워크아웃 메인 화면
-.workouts_main {
+.category_main {
 
   .item_category {
     display: flex;
@@ -305,6 +332,7 @@ img {
 
   }
 }
+
 // 워크아웃 1
 .workout1 {
 
@@ -339,5 +367,13 @@ img {
   }
   .sec1 {
     margin-left: 30px;
+  }
+}
+
+.program1 {
+  p {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
   }
 }
