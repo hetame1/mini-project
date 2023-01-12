@@ -151,45 +151,31 @@ img {
   }
 }
 .index_wrapper {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
-  padding: 45px 0 10px 0;
-  line-height: 50px;
-  .item_index {
-    width: 185px;
+  padding: 10px 0 15px 0;
+  height: auto;
+  .index {
+    width: 195px;
     height: 50px;
-    background-color: #c2c2c2;
+    line-height: 50px;
+    background: #c2c2c2;
     text-align: center;
-    margin: 10px 20px 0 0;
     float: left;
+    margin: 0 15px 0 0;
     a {
       display: block;
-      width: 130px;
+      width: 145px;
       height: 50px;
       color: #fff;
       font-size: 14px;
       font-weight: bold;
-      float: left;
     }
     .checkbox {
-      background-size: contain;
-      float: right;
-      width: 50px;
-      height: 45px;
-      cursor: pointer;
-      border: 2px solid #c2c2c2;
       background-color: #fff;
     }
-    .checkbox.check {
-      background-image: url(/images/programs/xx.png);
-    }
   }
-}
-.index_wrapper:after {
-  content: "";
-  display: block;
-  clear: both;
 }
 // /공통 부분
 
@@ -218,6 +204,7 @@ img {
   // 상단
   .topmenu  {
     display: block;
+    
     ul {
       display: block;
       font-family: 'Pathway Gothic One', sans-serif;
@@ -383,7 +370,6 @@ img {
   }
 }
 
-<<<<<<< HEAD
 .program1 {
   p {
     display: block;
@@ -431,11 +417,11 @@ img {
      }
   }
 }
+
+// 챌린지(1)
   
 
 
        
   
 
-=======
->>>>>>> 894decad369fb644b54cffb9ec85d2d8ce3f3ea3
