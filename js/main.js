@@ -84,3 +84,12 @@ $("li.set").on("click", function(event) {
     $(this).addClass("on");
   }
 })
+
+$(".checkbox").on("click", function(event) {
+  if($(this).hasClass("check")) {
+    $(this).removeClass("check")
+  }
+  else {
+    $(this).addClass("check");
+  }
+})
