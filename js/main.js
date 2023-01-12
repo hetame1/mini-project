@@ -86,10 +86,15 @@ $("li.set").on("click", function(event) {
 })
 
 $(".checkbox").on("click", function(event) {
-  if($(this).hasClass("check")) {
-    $(this).removeClass("check")
+  var id = $(this).attr("id")
+  var image = $(this).css("background-image")
+  var checked = $(this).css("background-image", "url(/images/programs/xx.png)")
+  var check = $(this).css("background-image", "none");
+
+  if(image == "none") {
+    localStorage.setItem(id, checked)
+  } else {
+    localStorage.setItem(id, check)
   }
-  else {
-    $(this).addClass("check");
-  }
+  
 })
