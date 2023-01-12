@@ -377,3 +377,49 @@ img {
     margin-top: 20px;
   }
 }
+
+// 챌린지 메인 화면
+
+
+.Callenges {
+
+  .wrapper {
+    
+    .challenges {
+      display: flex;
+      width: 100%;
+      flex-wrap: wrap;
+      justify-content: center;
+     
+     .cllaenges-purpose {
+        padding-right: 0.5%;
+        padding-top: 0.5%;
+        width: 24%;
+      }
+  
+    }
+  }
+}
+
+// 챌린지(1) 화면
+.Callenges{
+  
+  .wrapper{
+
+    .main{
+      width: 100%;
+      padding: 25px;
+      background-color: #fff; 
+    }
+     figure.chllaenges-image{
+      background-image: url(/images/darebg.jpg);
+      text-align: center;
+     }
+  }
+}
+  
+
+
+       
+  
+

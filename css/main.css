@@ -340,4 +340,26 @@ img {
   display: block;
   text-align: center;
   margin-top: 20px;
+}
+
+.Callenges .wrapper .challenges {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.Callenges .wrapper .challenges .cllaenges-purpose {
+  padding-right: 0.5%;
+  padding-top: 0.5%;
+  width: 24%;
+}
+
+.Callenges .wrapper .main {
+  width: 100%;
+  padding: 25px;
+  background-color: #fff;
+}
+.Callenges .wrapper figure.chllaenges-image {
+  background-image: url(/images/darebg.jpg);
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
