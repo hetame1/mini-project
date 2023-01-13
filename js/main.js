@@ -85,16 +85,22 @@ $("li.set").on("click", function(event) {
   }
 })
 
+
 $(".checkbox").on("click", function(event) {
   var id = $(this).attr("id")
-  var image = $(this).css("background-image")
-  var checked = $(this).css("background-image", "url(/images/programs/xx.png)")
-  var check = $(this).css("background-image", "none");
-
-  if(image == "none") {
-    localStorage.setItem(id, checked)
-  } else {
-    localStorage.setItem(id, check)
+  const updateimage = function() {
+    $(this).css("background-image", "url(/images/programs/xx.png)")
   }
+  if(localStorage[id] == "none" || localStorage[id] == null) {
+    localStorage.setItem(id, "background-image: url(/images/programs/xx.png); background-size: contain;")
+    updateimage();
+  }
+  else if(localStorage[id] == "background-image: url(/images/programs/xx.png); background-size: contain;"){
+    localStorage.setItem(id, "none")
+  } 
   
 })
+
+const updateimage = function() {
+  $(id).css("background-image", "url(/images/programs/xx.png)")
+}
