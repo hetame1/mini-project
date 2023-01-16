@@ -97,6 +97,12 @@ img {
   font-size: 16px;
 }
 
+.toolbox-wrapper:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 .showtimer, .showset {
   color: #666;
   font-size: 12px;
@@ -158,7 +164,7 @@ img {
   width: 80%;
   margin: 0 auto;
   text-align: center;
-  padding: 45px 0 10px 0;
+  padding: 35px 0 10px 0;
   line-height: 50px;
 }
 .index_wrapper .item_index {
@@ -347,4 +353,20 @@ img {
 }
 .workout2 .sec1 {
   margin-left: 30px;
+}
+
+.day figure.item_image {
+  background-image: url(/images/darebg.jpg);
+  text-align: center;
+}
+.day .timecounter {
+  margin-left: 40px;
+}
+.day .sec1 {
+  margin-left: 30px;
+}
+.day .timeshowing, .day .setsshowing {
+  color: #666;
+  font-size: 12px;
+  font-weight: bold;
 }/*# sourceMappingURL=main.css.map */

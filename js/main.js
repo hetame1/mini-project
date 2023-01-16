@@ -85,22 +85,18 @@ $("li.set").on("click", function(event) {
   }
 })
 
-
-$(".checkbox").on("click", function(event) {
-  var id = $(this).attr("id")
-  const updateimage = function() {
-    $(this).css("background-image", "url(/images/programs/xx.png)")
-  }
-  if(localStorage[id] == "none" || localStorage[id] == null) {
-    localStorage.setItem(id, "background-image: url(/images/programs/xx.png); background-size: contain;")
-    updateimage();
-  }
-  else if(localStorage[id] == "background-image: url(/images/programs/xx.png); background-size: contain;"){
-    localStorage.setItem(id, "none")
-  } 
+$(document).ready(function() {
   
+  const key = localStorage.getItem("back")
+
+  if(key !== null) {
+    
+  }
+
+  $(".checkbox").on("click", function() {
+    const imagechange = document.getElementById(this).style.backgroundImage = "url(/images/programs/xx.png)"
+    localStorage.setItem("back", imagechange)
+  })
 })
 
-const updateimage = function() {
-  $(id).css("background-image", "url(/images/programs/xx.png)")
-}
+

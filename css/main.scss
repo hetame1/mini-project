@@ -96,6 +96,11 @@ img {
     font-size: 16px;
   }
 }
+.toolbox-wrapper:after {
+  content: "";
+  display: block;
+  clear: both;
+}
 .showtimer, .showset {
   color: #666;
   font-size: 12px;
@@ -154,7 +159,7 @@ img {
   width: 80%;
   margin: 0 auto;
   text-align: center;
-  padding: 45px 0 10px 0;
+  padding: 35px 0 10px 0;
   line-height: 50px;
   .item_index {
     width: 185px;
@@ -382,3 +387,21 @@ img {
   }
 }
 
+.day {
+  figure.item_image {
+    background-image: url(/images/darebg.jpg);
+    text-align: center;
+  }
+  
+  .timecounter {
+    margin-left: 40px;
+  }
+  .sec1 {
+    margin-left: 30px;
+  }
+  .timeshowing, .setsshowing {
+    color: #666;
+    font-size: 12px;
+    font-weight: bold;
+  }
+}
