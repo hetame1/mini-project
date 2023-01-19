@@ -392,36 +392,123 @@ img {
       justify-content: center;
      
      .cllaenges-purpose {
-        padding-right: 0.5%;
-        padding-top: 0.5%;
-        width: 24%;
+      padding-right: 0.5%;
+      padding-top: 0.5%;
+      width: 24%;
       }
   
     }
   }
 }
 
-// 챌린지(1) 화면
+//챌린지 사진 부분
 .Callenges{
-  
+   
   .wrapper{
 
-    .main{
-      width: 100%;
-      padding: 25px;
-      background-color: #fff; 
+    figure.chllaenges-image{
+      background:url('/images/Challenges/backgroound1.jpg') no-repeat top center;
+      text-align:center
     }
-     figure.chllaenges-image{
-      background-image: url(/images/darebg.jpg);
-      text-align: center;
-     }
   }
 }
 
-// 챌린지(1)
-  
 
 
-       
+// 챌린지prgress Tracking
+.Callenges{
   
+  
+ #challengebg{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .progressTracking{
+    width: 100%;
+  }
+  
+    .stitle {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      color: #ccc;
+      line-height: 26px;
+      font-family: 'Noto Serif Georgian', serif;
+      font-size: 24px;
+      font-weight: 700;
+      
+      ::before {
+        content: '';
+        border-top: 2px solid #ccc; 
+        margin: 0 20px 0 0;
+        flex: 1 0 20px;
+      }
+      ::after {
+        content: '';    
+        border-top: 2px solid #ccc; 
+        margin: 0 20px 0 0;
+        flex: 1 0 20px;
+      }
+    }
+    .stitle::before{
+      content: '';
+      border-top: 2px solid #ccc; 
+      margin: 0 20px 0 0;
+      flex: 1 0 20px;
+    
+    }
+    .stitle::after{
+      content: '';    
+      border-top: 2px solid #ccc; 
+      margin: 0 20px 0 0;
+      flex: 1 0 20px;
+
+    }
+
+  }
+}
+
+ 
+
+// 챌린지 아래 날짜 체크
+
+.Callenges{
+
+  .numberbox{
+    display: flex;
+    width: 65%;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    
+    
+    
+    .ppp{
+      display: inline-block;
+      width: 51px;
+      height: 51px;
+      background-color: none;
+      border: 3px solid #ccc;
+      font-family: 'Pathway Gothic One', sans-serif;
+      font-size: 40px;
+      font-weight: bold;
+      color: #ccc;
+      cursor: pointer;
+      text-align: center;
+     }
+
+     .aaa{
+      background-image: url(/images/Challenges/1.png);
+      background-size: contain;
+     }
+      
+      
+
+    
+    }
+    
+     
+  }
+
+
 
