@@ -85,18 +85,5 @@ $("li.set").on("click", function(event) {
   }
 })
 
-$(document).ready(function() {
-  
-  const key = localStorage.getItem("back")
-
-  if(key !== null) {
-    
-  }
-
-  $(".checkbox").on("click", function() {
-    const imagechange = document.getElementById(this).style.backgroundImage = "url(/images/programs/xx.png)"
-    localStorage.setItem("back", imagechange)
-  })
-})
 
 
