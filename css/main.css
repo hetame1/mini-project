@@ -170,10 +170,10 @@ img {
 .index_wrapper .item_index {
   width: 185px;
   height: 50px;
-  background-color: #c2c2c2;
+  background: #c2c2c2;
   text-align: center;
-  margin: 10px 20px 0 0;
   float: left;
+  margin: 10px 20px 0 0;
 }
 .index_wrapper .item_index a {
   display: block;
@@ -353,6 +353,96 @@ img {
 }
 .workout2 .sec1 {
   margin-left: 30px;
+}
+
+.program1 p {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.Callenges .wrapper .challenges {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.Callenges .wrapper .challenges .cllaenges-purpose {
+  padding-right: 0.5%;
+  padding-top: 0.5%;
+  width: 24%;
+}
+
+.Callenges .wrapper figure.chllaenges-image {
+  background: url("/images/Challenges/backgroound1.jpg") no-repeat top center;
+  text-align: center;
+}
+
+.Callenges #challengebg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Callenges #challengebg .progressTracking {
+  width: 100%;
+}
+.Callenges #challengebg .stitle {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  color: #ccc;
+  line-height: 26px;
+  font-family: "Noto Serif Georgian", serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+.Callenges #challengebg .stitle ::before {
+  content: "";
+  border-top: 2px solid #ccc;
+  margin: 0 20px 0 0;
+  flex: 1 0 20px;
+}
+.Callenges #challengebg .stitle ::after {
+  content: "";
+  border-top: 2px solid #ccc;
+  margin: 0 20px 0 0;
+  flex: 1 0 20px;
+}
+.Callenges #challengebg .stitle::before {
+  content: "";
+  border-top: 2px solid #ccc;
+  margin: 0 20px 0 0;
+  flex: 1 0 20px;
+}
+.Callenges #challengebg .stitle::after {
+  content: "";
+  border-top: 2px solid #ccc;
+  margin: 0 20px 0 0;
+  flex: 1 0 20px;
+}
+
+.Callenges .numberbox {
+  display: flex;
+  width: 65%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.Callenges .numberbox .ppp {
+  display: inline-block;
+  width: 51px;
+  height: 51px;
+  background-color: none;
+  border: 3px solid #ccc;
+  font-family: "Pathway Gothic One", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: #ccc;
+  cursor: pointer;
+  text-align: center;
+}
+.Callenges .numberbox .aaa {
+  background-image: url(/images/Challenges/1.png);
+  background-size: contain;
 }
 
 .day figure.item_image {
