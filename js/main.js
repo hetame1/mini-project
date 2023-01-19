@@ -85,11 +85,5 @@ $("li.set").on("click", function(event) {
   }
 })
 
-$(".checkbox").on("click", function(event) {
-  if($(this).hasClass("check")) {
-    $(this).removeClass("check")
-  }
-  else {
-    $(this).addClass("check");
-  }
-})
+
+
