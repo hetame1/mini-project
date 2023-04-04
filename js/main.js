@@ -86,4 +86,33 @@ $("li.set").on("click", function(event) {
 })
 
 
+// 예시 자바스크립트 코드
+let checkboxes = document.querySelectorAll(".checkbox");
+
+// 각 checkbox에 대해 이벤트 리스너를 추가합니다.
+checkboxes.forEach((checkbox) => {
+  checkbox.addEventListener("click", function () {
+    // 현재 checkbox의 이미지를 가져옵니다.
+    let currentImage = checkbox.style.backgroundImage;
+
+    // 이미지가 없는 경우 새로운 이미지를 설정합니다.
+    if (!currentImage) {
+      checkbox.style.backgroundImage = "url('/images/programs/xx.png')";
+    } 
+    // 그렇지 않은 경우(이미지가 설정된 경우) 이미지를 제거합니다.
+    else {
+      checkbox.style.backgroundImage = "";
+    }
+
+    // 변경된 이미지를 로컬 스토리지에 저장합니다.
+    localStorage.setItem(checkbox.id, checkbox.style.backgroundImage);
+  });
+
+  // 새로고침 시 이전에 저장한 이미지가 있다면 가져와서 설정합니다.
+  let savedImage = localStorage.getItem(checkbox.id);
+  if (savedImage) {
+    checkbox.style.backgroundImage = savedImage;
+  }
+});
+
 

@@ -201,6 +201,20 @@ img {
   clear: both;
 }
 
+.sititle::after {
+  content: "";
+  border-top: 2px solid #ccc;
+  margin: 0 0 0 20px;
+  box-sizing: border-box;
+}
+
+.sititle::before {
+  margin: 0 20px 0 0;
+  content: "";
+  border-top: 2px solid #ccc;
+  box-sizing: border-box;
+}
+
 .header {
   height: 70px;
   margin-bottom: 5px;
@@ -361,102 +375,44 @@ img {
   margin-top: 20px;
 }
 
-.Callenges .wrapper .challenges {
-  display: flex;
-  width: 100%;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.Callenges .wrapper .challenges .cllaenges-purpose {
-  padding-right: 0.5%;
-  padding-top: 0.5%;
-  width: 24%;
-}
-
-.Callenges .wrapper figure.chllaenges-image {
-  background: url("/images/Challenges/backgroound1.jpg") no-repeat top center;
+.item_image_challenge {
+  background: url(/images/Challenges/backgroound1.jpg) no-repeat top center;
   text-align: center;
 }
 
-.Callenges #challengebg {
+.article_body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  line-height: 30px;
+  color: #141414;
+}
+.article_body .progresstracking {
+  display: block;
+  margin: 0 auto;
+  padding: 20px 0 0 0;
+  max-width: 885px;
+}
+.article_body .progresstracking .sititle {
   display: flex;
-  flex-direction: column;
+  width: 100%;
+  justify-content: center;
   align-items: center;
-}
-.Callenges #challengebg .progressTracking {
-  width: 100%;
-}
-.Callenges #challengebg .stitle {
-  display: flex;
-  width: 100%;
-  justify-content: center;
+  text-align: center;
   color: #ccc;
-  line-height: 26px;
-  font-family: "Noto Serif Georgian", serif;
   font-size: 24px;
-  font-weight: 700;
+  line-height: 26px;
+  font-weight: bold;
 }
-.Callenges #challengebg .stitle ::before {
-  content: "";
-  border-top: 2px solid #ccc;
-  margin: 0 20px 0 0;
-  flex: 1 0 20px;
-}
-.Callenges #challengebg .stitle ::after {
-  content: "";
-  border-top: 2px solid #ccc;
-  margin: 0 20px 0 0;
-  flex: 1 0 20px;
-}
-.Callenges #challengebg .stitle::before {
-  content: "";
-  border-top: 2px solid #ccc;
-  margin: 0 20px 0 0;
-  flex: 1 0 20px;
-}
-.Callenges #challengebg .stitle::after {
-  content: "";
-  border-top: 2px solid #ccc;
-  margin: 0 20px 0 0;
-  flex: 1 0 20px;
-}
-
-.Callenges .numberbox {
-  display: flex;
-  width: 65%;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.Callenges .numberbox .ppp {
+.article_body .progresstracking .ppp {
   display: inline-block;
+  position: relative;
   width: 51px;
   height: 51px;
-  background-color: none;
-  border: 3px solid #ccc;
-  font-family: "Pathway Gothic One", sans-serif;
+  line-height: 51px;
   font-size: 40px;
   font-weight: bold;
   color: #ccc;
-  cursor: pointer;
-  text-align: center;
-}
-.Callenges .numberbox .aaa {
-  background-image: url(/images/Challenges/1.png);
-  background-size: contain;
-}
-
-.day figure.item_image {
-  background-image: url(/images/darebg.jpg);
-  text-align: center;
-}
-.day .timecounter {
-  margin-left: 40px;
-}
-.day .sec1 {
-  margin-left: 30px;
-}
-.day .timeshowing, .day .setsshowing {
-  color: #666;
-  font-size: 12px;
-  font-weight: bold;
+  background-color: #fff;
+  font-family: "Pathway Gothic One", Arial, sans-serif;
+  margin: 8px 8px 0 0;
 }/*# sourceMappingURL=main.css.map */
